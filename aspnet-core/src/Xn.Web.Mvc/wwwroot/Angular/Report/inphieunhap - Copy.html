@@ -1,0 +1,85 @@
+﻿<div id="inNhapHang" style="width: 21cm">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-borderless" style="font-weight: bold ">
+                <tbody>
+                <tr>
+                    <td>Tên đơn vị</td>
+                    <td>:{{inforCty[0].name}}</td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>:{{inforCty[0].address}}</td>
+                </tr>
+                <tr>
+                    <td>Mã số thuế</td>
+                    <td>:{{inforCty[0].code}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table-bordered table-borderless">
+                <tbody>
+                <tr>
+                    <td style="text-align: center;width: 200px">{{mauNhap}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="">
+        <h2 class="text-center">PHIẾU NHẬP KHO</h2>
+        <table class="table-bordered">
+            <tbody>
+            <tr>
+                <td colspan="2">{{Ngay}}</td>
+                <td colspan="1">No TK</td>
+            </tr>
+            <tr>
+                <td colspan="2">So: PN1301-03</td>
+                <td colspan="1">Co TK</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="" style="margin-left: -50px">
+            <div class="table-responsive">
+                <table class="table table-bordered aprint">
+                    <tbody class="text-center">
+                    <tr >
+                        <td rowspan="2" colspan="1">STT</td>
+                        <td rowspan="2" colspan="3"><br />Tên nhãn hiệu,qui cách, phẩm chất vật  tư (sản phẩm,hàng hoá)<br /></td>
+                        <td rowspan="2" colspan="1">Mã Vật Tư</td>
+                        <td rowspan="2">Đơn Vị Tính</td>
+                        <td rowspan="1" colspan="2">Số Lượng</td>
+                        <td rowspan="2">Đơn Giá</td>
+                        <td rowspan="2" colspan="2" class="text-center">Thành Tiền</td>
+                        <td rowspan="2" colspan="2">Ghi Chú</td>
+                    </tr>
+                    <tr>
+                        <td>Theo Chứng Từ</td>
+                        <td>Thực Nhập</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td colspan="3">B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td colspan="2">4</td>
+                        <td colspan="1"> 5 </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .table-responsive .aprint > tbody > tr > td {
+        border: 1px solid blue !important;
+    }
+</style>

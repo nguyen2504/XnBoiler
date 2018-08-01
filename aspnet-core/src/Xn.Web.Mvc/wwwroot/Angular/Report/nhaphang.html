@@ -1,0 +1,35 @@
+﻿
+
+<div id="printable">
+    <table datatable="ng" class="row-border hover"  >
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Đơn Hàng</th>
+                <th>Tên Hàng</th>
+                <th>Số Lượng</th>
+                <th>Đơn Giá</th>
+                <!--<th title="Đơn vị tính">DVT</th>-->
+                <th>Thành Tiền</th>
+                <th>VAT(%)</th>
+                <th>TC</th>
+                <th style="width: 150px">Ngày Ghi</th>
+                <th>Nhà Cung Cấp</th>
+            </tr>
+        </thead>
+        <tbody class="tbdy">
+        <tr ng-repeat="q in nhaps">
+            <td>{{$index+1}}</td>
+            <td><a href="#" ng-click="onClickmaDh('0',q.maDonHang)" data-toggle="tooltip" title="Tìm theo mã đơn hàng -{{q.maDonHang}}!">{{q.maDonHang}}</a></td>
+            <td> <a href="#" ng-click="onClickmaDh('1',q.tenHang)" data-toggle="tooltip" title="Tìm theo tên hàng -{{q.tenHang}}!">{{q.tenHang}}</a></td>
+            <td>{{q.soLuong}}({{q.dvt}})</td>
+            <td ><p class="right center-block">{{q.donGiaMua| currency:'':0}}</p></td>
+            <td ><p class="right">{{q.soLuong*q.donGiaMua| currency:'':0}}</p></td>
+            <td ><p class="right">{{q.vat*q.soLuong*q.donGiaMua| currency:'':0}}</p></td>
+            <td ><p class="right">{{(q.vat+1)*q.soLuong*q.donGiaMua| currency:'':0}}</p></td>
+            <td>{{q.ngayGhi| date:'dd/MM/yyyy HH:mm a'}}</td>
+            <td>{{q.tenNcc}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

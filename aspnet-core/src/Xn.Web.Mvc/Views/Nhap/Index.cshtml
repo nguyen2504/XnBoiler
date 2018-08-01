@@ -1,0 +1,82 @@
+﻿@using Microsoft.AspNetCore.Routing
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript" src="~/Angular/NhapHang/nhap.js"></script>
+<!-- Trigger the modal with a button -->
+<div class="row">
+    <div class="col-md-6">
+        <button type="button" style="width:100%"  class="btn btn-success btn-lg  btn-info w-100" data-toggle="modal" ng-click="GetMaDh()" data-target="#myNhap">Thêm </button>
+    </div>
+    <div class="col-md-6">
+        <button type="button" class="btn btn-info " ng-click="print()">
+            <i class="material-icons" style="font-size: 20px; color: #dc143c;">
+                print
+            </i>
+            <b style="margin-bottom:5px">In Phiếu Nhập Hàng</b>
+        </button>
+    </div>
+    
+</div>
+
+<br/>
+
+
+<div align="center" class="ab_center" style="width: {{gWidth}};height:{{gHeight}};">
+    <label for="giay" > Chọn Giấy</label>
+    <select id="giay" ng-model="chonGiay" ng-change="onChange()">
+        <option value="5">A5 (Dọc)</option>
+        <option value="4">A4 (Dọc)</option>
+    </select>
+    <table  datatable="ng" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="row-border hover" >
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Đơn hàng</th>
+                <th>Thành Tiền</th>
+                <th>VAT(%)</th>
+                <th>Thanh Toán</th>
+                <th>Còn lại</th>
+                <th>Ngày Ghi</th>
+                <th>Loại</th>
+                <th>Chi Tiết</th>
+            </tr>
+        </thead>
+        <tbody class="tbdy">
+            <tr ng-repeat="q in listnhap">
+                <td>{{$index+1}}</td>
+                <td>{{q.maDonHang}}</td>
+                <td>{{q.thanhTien|number}}</td>
+                <td>{{q.vat*100|number}}</td>
+                <td>{{q.thanhToan|number}}</td>
+                <td>{{q.conlai|number}}</td>
+                <td>{{q.ngayGhi|date :"dd/MM/yy h:mm a"}}</td>
+                <td>{{q.loai}}</td>
+                <td class="dropdown" data-toggle="tooltip" title="Cập Nhật, Xóa, Xem chi tiết !">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#" ng-click="onEdit(q.maDonHang)" data-toggle="modal" data-target="#myNhap" data-toggle="tooltip" class="waves-effect waves-block edit-tenant" data-tenant-id="1" data-toggle="modal" data-target="#TenantEditModal"><i class="material-icons">edit</i>Edit</a></li>
+                        <li><a href="#" ng-click="onDelete(q.maDonHang)" title="Cẩn thận khi xóa bạn không thể phục hồi lại" data-toggle="tooltip" class="waves-effect waves-block delete-tenant" data-tenant-id="1" data-tenancy-name="Default"><i class="material-icons">delete_sweep</i>Delete</a></li>
+                        @*<li><a href="/DetailNhapHang/Details?madh={{q.maDonHang}}" title="Xem chi tiết" data-toggle="tooltip" class="waves-effect waves-block delete-tenant" data-tenant-id="1" data-tenancy-name="Default"><i class="material-icons">details</i>Detail</a></li>*@
+                        <li><a href="#" ng-click="getNhap(q.maDonHang)" title="Xem chi tiết" data-toggle="tooltip" class="waves-effect waves-block delete-tenant" data-tenant-id="1" data-tenancy-name="Default"><i class="material-icons">details</i>Detail</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+@await Html.PartialAsync("Creates")
+
+<style>
+    .tbdy tr td {
+        padding-top: 1px !important;
+        padding-bottom: 1px!important
+    }
+</style>
