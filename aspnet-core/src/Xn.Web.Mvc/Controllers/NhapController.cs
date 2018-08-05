@@ -100,13 +100,19 @@ namespace Xn.Web.Controllers
             var t = _nhap.GetAll().ToList()
                 .Where(j => j.NgayGhi.Month.Equals(date.Month) && j.NgayGhi.Year.Equals(date.Year)).ToList();
             var num = 0;
-            try
+            if (t.Count.Equals(0))
             {
-                num = Int32.Parse(t.LastOrDefault().MaDonHang[1].ToString());
-            }
-            catch (Exception e)
+                num = 1;}
+            else
             {
-               num = Int32.Parse(t.LastOrDefault().MaDonHang[0].ToString());
+                try
+                {
+                    num = Int32.Parse(t.LastOrDefault().MaDonHang[1].ToString());
+                }
+                catch (Exception e)
+                {
+                    num = Int32.Parse(t.LastOrDefault().MaDonHang[0].ToString());
+                }
             }
             var stt = num+1;
             if (stt < 10)
