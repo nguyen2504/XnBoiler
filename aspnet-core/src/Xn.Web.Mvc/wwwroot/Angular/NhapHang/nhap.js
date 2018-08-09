@@ -184,7 +184,7 @@ $scope.n = 1;
     var url = 'Nhap/GetNxs/';
     $http.post(url).then(function (e) {
       $scope.listnhap = e.data.result;
-      console.log(JSON.stringify($scope.listnhap));
+      //console.log(JSON.stringify($scope.listnhap));
     });
   }
   $scope.onDelete = function(id) {
@@ -193,6 +193,13 @@ $scope.n = 1;
     $http.post(url).then(function(e) {
       //console.log(e);
       $scope.getNhapXuat();
+    });
+  };
+  $scope.loadCty = function () {
+    var url = "Report/CongTy";
+    $http.post(url).then(function (e) {
+      $scope.inforCty = e.data.result;
+      
     });
   };
   $scope.onEdit = function (mdh) {
@@ -236,7 +243,18 @@ $scope.n = 1;
    
     });
   }
+  $scope.print = function (mdh) {
+    $scope.mauNhap = "Mẫu số :  02-VT (Ban hành theo QĐ 15/2006/QĐ-BTC ngày 20/03/2006 của Bộ Trưởng Bộ Tài Chính)";
+    var url = '/Nhap/PrintMdh?mdh=' + mdh;
+    $http.post(url).then(function (e) {
+      //console.log(JSON.stringify(e.data.result));
+      $scope.nhapsmdh = e.data.result;
+      $scope.hide_show_print = "printMdh_show";
+    });
+  }
   function init() {
+    $scope.loadCty();
+    $scope.hide_show_print = 'printMdh_hide';
     if (typeof(Storage) !== "undefined") {
       $scope.gWidth = localStorage.getItem("w");
       $scope.gHeight = localStorage.getItem("h");

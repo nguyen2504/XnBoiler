@@ -270,6 +270,11 @@ namespace Xn.Web.Controllers
             return Json(dt);
         }
 
+        public IActionResult PrintMdh(string mdh)
+        {
+            var dt = _nhap.GetAll().Where(j =>j.IsActive  && j.MaDonHang.Equals(mdh)).ToList();
+            return Json(dt);
+        }
         public IActionResult GetMaDonhangOrtenHangs()
         {
             var t = new List<string>();
