@@ -1,0 +1,121 @@
+﻿<style>
+    table tbody .tr1 td {
+        margin-top: 2px;
+        margin-top: 2px;
+        margin-left: 5px;
+        font-size: 1.01em;
+        font-weight: bold;
+      line-height: 1.4
+    }
+    .tr2 {
+        margin-right: 5px;
+        font-weight: bold;
+        line-height: 1.4
+    }
+</style>
+<div id="inNhapHang" style="width: 21cm">
+    <div class="row">
+        <div class="col-md-6">
+            <table >
+                <tbody>
+                    <tr class="tr1">
+                        <td class="tr2">Tên đơn vị</td>
+                        <td>:&nbsp;{{infor[0].name}}</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="tr2">Địa chỉ</td>
+                        <td >:&nbsp;{{infor[0].address}}</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="tr2">Mã số thuế</td>
+                        <td>:&nbsp;{{infor[0].code}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table-bordered table-borderless">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center; width: 200px">{{maunhap}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="">
+        <h2 class="text-center">PHIẾU NHẬP KHO</h2>
+        <table class="table-bordered">
+            <tbody>
+                <tr>
+                    <td colspan="2">{{Ngay}}</td>
+                    <td colspan="1">No TK</td>
+                </tr>
+                <tr>
+                    <td colspan="2">So: {{nhaps[0]['maDonHang']}}</td>
+                    <td colspan="1">Co TK</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid" id="ncc">
+            <div class="row" style="color: red">
+                <div class="col-md-2">Tên Công Ty</div>
+                <div class="col-md-8">:Tên Công Ty</div>
+            </div>
+            <div class="row" style="color: red">
+                <div class="col-md-2">Địa Chỉ</div>
+                <div class="col-md-8">:Tên Công Ty</div>
+            </div>
+            <div class="row" style="color: red">
+                <div class="col-md-2">Mã Số Thuế</div>
+                <div class="col-md-8">:Tên Công Ty</div>
+            </div>
+        </div>
+        <div class="">
+            <div class="table-responsive">
+                <table class="table table-bordered aprint">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="1">STT</th>
+                            <th rowspan="2" colspan="3"><br />Tên nhãn hiệu,qui cách, phẩm chất vật tư (sản phẩm,hàng hoá)<br /></th>
+                            <!--<th rowspan="2" colspan="1">Mã Vật Tư</th>-->
+                            <th rowspan="2">Đơn Vị Tính</th>
+                            <th rowspan="2" colspan="1">Số Lượng</th>
+                            <th rowspan="2">Đơn Giá</th>
+                            <th rowspan="2" colspan="2" class="text-center">Thành Tiền</th>
+                            <th class="text-center">VAT</th>
+                            <th class="text-center">Tổng</th>
+                            <th rowspan="2" colspan="2">Ghi Chú</th>
+                            <th rowspan="2" colspan="2">NCC</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr ng-repeat="q in nhaps">
+                            <td>{{$index+1}}</td>
+                            <td colspan="3">{{q.tenHang}}</td>
+                            <!--<td>{{q.mavt}}</td>-->
+                            <td>{{q.dvt}}</td>
+                            <td>{{q.soLuong| currency:'':0}}</td>
+                            <td>{{q.donGiaMua| currency:'':0}}</td>
+                            <td colspan="2">{{q.donGiaMua*q.soLuong| currency:'':0}}</td>
+                            <td>{{q.vat*q.donGiaMua*q.soLuong| currency:'':0}}</td>
+                            <td>{{(1+q.vat)*q.donGiaMua*q.soLuong| currency:'':0}}</td>
+                            <td colspan="2">{{q.ghiChu}}</td>
+                            <td>{{q.tenNcc}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .table-responsive .aprint > tbody > tr > td {
+        border: 1px solid blue !important;
+    }
+
+    .table-responsive .aprint > thead > tr > th {
+        border: 1px solid blue !important;
+    }
+</style>
