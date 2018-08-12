@@ -56,9 +56,9 @@ namespace Xn.Services
            return _repository.FirstOrDefault(j => j.Code.Equals(code));
         }
 
-        public Task<Ncc> GetById(long? id)
+        public Ncc GetById(long? id)
         {
-            return _repository.FirstOrDefaultAsync(x=>x.Id==id);
+            return _repository.FirstOrDefault(x=>x.Id==id);
         }
 
         public void Update(Ncc entity)

@@ -1,8 +1,8 @@
-﻿app.controller('ctrl', ['$scope','$http', function($scope,$http) {
-  FnNhap($scope, $http);
+﻿app.controller('ctrl', ['$scope', '$http', 'fnFactory', function ($scope, $http, fnFactory) {
+  FnNhap($scope, $http,fnFactory);
 }]);
 
-function FnNhap($scope, $http) {
+function FnNhap($scope, $http, fnFactory) {
   $scope.l = [];
   $scope.nhaphang = 'Nhập Hàng';
   $scope.them = "Thêm";
@@ -249,8 +249,49 @@ $scope.n = 1;
     $http.post(url).then(function (e) {
       //console.log(JSON.stringify(e.data.result));
       $scope.nhapsmdh = e.data.result;
+      var s = 0;
+      for (var i = 0; i < $scope.nhapsmdh.length; i++) {
+        s += (1) * $scope.nhapsmdh[i].donGiaMua * $scope.nhapsmdh[i].soLuong;
+      }
+      var id = $scope.nhapsmdh[0].idNcc;
+      $scope.getNcc(id);
+      $scope.tongncc = s;
+      $scope.summoney = fnFactory.DocTienBangChu($scope.tong(s , sum('vat')))+' đồng chẵn/';
+      $scope.vats = sum('vat');
+      //fnFactory.ingiay('inNhapHang', '');
       $scope.hide_show_print = "printMdh_show";
+    
     });
+  }
+  $scope.tong = function (a, b) {
+    console.log('toi');
+    return parseFloat(a) + parseFloat(b);
+  }
+  function sum( item) {
+   
+    var s = 0;
+    if (item == 'vat') {
+      var s = 0;
+      for (var i = 0; i < $scope.nhapsmdh.length; i++) {
+        s += $scope.nhapsmdh[i].vat * $scope.nhapsmdh[i].donGiaMua;
+      }
+    };
+    if (item == 'sum') {
+      for (var i = 0; i < l.length; i++) {
+        s += (1 + $scope.nhapsmdh[i].vat) * $scope.nhapsmdh[i].donGiaMua * l[i].soLuong;
+      }
+    }
+    return s.toFixed(0);
+  }
+  $scope.getNcc = function (id) {
+    var url = '/Nhap/GetNcc?id=' + id;
+    $http.post(url).then(function (e) {
+      //console.log(JSON.stringify(e.data.result));
+      $scope.ncc = e.data.result;
+    });
+  }
+  $scope.inView = function() {
+    fnFactory.ingiay('inNhapHang','');
   }
   function init() {
     $scope.loadCty();

@@ -104,7 +104,7 @@ namespace Xn.Web.Controllers
         {
             var t = _nccService.GetById(id);
             
-            return t != null ? Json(t.Result.MapTo<NccEntity>()) : Json("0");
+            return t != null ? Json(t.MapTo<NccEntity>()) : Json("0");
         }
 
         public IActionResult Delete(int id)

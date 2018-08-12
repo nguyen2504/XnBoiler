@@ -14,7 +14,7 @@ namespace Xn.Services
        IEnumerable<Ncc> GetAll();
         IEnumerable<Ncc> GetAllbtIdCty(int idcty);
         Models.Ncc GetFist(string code);
-       Task<Ncc> GetById(long? id);
+       Ncc GetById(long? id);
        Task<Ncc> Create(Ncc entity);
        void Update(Ncc entity);
        Task<Ncc> CreateOrUpdate(Ncc entity);

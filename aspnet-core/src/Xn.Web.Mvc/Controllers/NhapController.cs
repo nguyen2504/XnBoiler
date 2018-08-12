@@ -354,6 +354,13 @@ namespace Xn.Web.Controllers
             ViewBag.nccs = ncc;
             return Json(ncc);
         }
+        [HttpPost]
+        public JsonResult GetNcc(int id)
+        {
+            //var check = _nhap.GetAll().FirstOrDefault(j => j.IsActive && j.IdNcc.Equals(id));
+            //if(check!=null)
+            return Json(_ncc.GetById(id));
+        }
         public JsonResult GetTenHang()
         {
             var dt = _nhap.GetAll().Select(j => j.TenHang).Distinct();

@@ -85,10 +85,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                @*<h4 class="modal-title">Modal Header</h4>*@
             </div>
             <div class="modal-body">
-             <print-input-code infor="inforCty" maunhap="mauNhap" nhaps="nhapsmdh"></print-input-code>
+                <button class="text-center btn float-button-light" ng-click="inView()">In Phiếu</button>
+                <print-input-code infor="inforCty" maunhap="mauNhap" nhaps="nhapsmdh" ncc="ncc" summoney="summoney" tongncc="tongncc" vats="vats"></print-input-code>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -1,0 +1,679 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: D:\Work\XnBoiler\XnBoiler\aspnet-core\src\Xn.Web.Mvc
+Now listening on: http://localhost:31865
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection b3d8ebb6-17ed-4512-8fb6-66c826cecf4c.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 920.5142ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 3dcb0a98-6f75-44ff-acf3-0b91b288ccaa.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 51.9627ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 34705e26-1c0d-4c08-bd45-7ff8fac2296a.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 48.4731ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection f5d0173d-a1a5-433e-8e60-e864c5659ec4.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 70.9563ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 53572f3f-e193-4753-8460-1909afecc619.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 63.3388ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 753d1587-811b-4a31-b2db-1dfee495c451.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 55.2817ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection eb6ed3fe-117b-4aa4-b847-8cf258c637bf.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 38.5295ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection db9353e6-576b-496b-a7d3-72373b96b527.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 42.7769ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 3553ddd0-3044-4b20-9d29-314bdc1b112e.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 38.4091ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection ab10d5fd-e153-4d18-b28d-656b28af6e0a.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 42.56ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection d83142ea-820e-4e12-ae6d-05e81defaa9e.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 35.6481ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 69a95009-69d1-4f8f-8c06-724b0cd6281b.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 36.2551ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection 1ccaed64-71d5-4bd7-84a2-50cfc752ad8f.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 38.5577ms 101 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[1]
+      Socket opened.
+info: Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport[2]
+      Socket closed.
+fail: Microsoft.AspNetCore.Sockets.ConnectionManager[3]
+      Failed disposing connection f4fe8f7e-f5ff-4e04-87ff-ca5cb7ba2366.
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.MissingMethodException: Method not found: 'Boolean System.Memory`1.TryGetArray(System.ArraySegment`1<!0> ByRef)'.
+   at System.Net.WebSockets.ManagedWebSocketExtensions.ReadAsync(Stream stream, Memory`1 destination, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 57.52ms 101 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
